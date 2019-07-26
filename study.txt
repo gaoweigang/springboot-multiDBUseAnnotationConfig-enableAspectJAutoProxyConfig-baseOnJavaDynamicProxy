@@ -1,0 +1,17 @@
+Spring+MyBatis多数据源配置实现： https://www.cnblogs.com/lzrabbit/p/3750803.html
+
+spring配置多数据源：https://www.jianshu.com/p/3f29f5fdc9a1
+
+
+--如何将主库的数据同步到从库 ：使用canal+rocketmq
+
+IDEA终端无法使用mvn命令
+解决：配置maven,然后重启IDEA
+1.MAVEN_HOME = C:\work\tools\apache-maven-3.3.9
+2.编辑环境变量Path，追加%MAVEN_HOME%\bin
+
+
+cglib动态代理生成.class文件
+
+
+EnableAspectJAutoProxy 与 spring.aop.proxy-target-class 的区别

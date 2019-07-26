@@ -1,0 +1,50 @@
+
+server:
+  port: 8088
+#使用EnableAspectJAutoProxy注解配置
+#spring:
+#  aop:
+#    proxy-target-class: false
+  datasource:
+    #用户系统
+    user:
+        name: userDB
+        url: jdbc:mysql://127.0.0.1:3306/user_system?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true
+        username: root
+        password: 123456
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        maxActive: 50
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x' FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+    #角色管理系统
+    role:
+        name: roleDB
+        url: jdbc:mysql://127.0.0.1:3306/role_system?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true
+        username: root
+        password: 123456
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        maxActive: 50
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x' FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        
+mybatis:
+        mapperLocations: classpath*:com/gwg/shiro/web/mapper/*.xml
+        typeAliasesPackage: com.gwg.shiro.web.model
+
+

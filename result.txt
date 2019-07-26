@@ -1,0 +1,32 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.gwg.shiro:springboot-multipleDataSource >-------------
+[INFO] Building springboot-multipleDataSource 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- mybatis-generator-maven-plugin:1.3.5:generate (default-cli) @ springboot-multipleDataSource ---
+[INFO] Connecting to the Database
+[INFO] Introspecting table tbl_user_role
+[INFO] Introspecting table tbl_role
+[INFO] Generating Example class for table tbl_user_role
+[INFO] Generating Record class for table tbl_user_role
+[INFO] Generating Mapper Interface for table tbl_user_role
+[INFO] Generating SQL Map for table tbl_user_role
+[INFO] Generating Example class for table tbl_role
+[INFO] Generating Record class for table tbl_role
+[INFO] Generating Mapper Interface for table tbl_role
+[INFO] Generating SQL Map for table tbl_role
+[INFO] Saving file UserRoleMapper.xml
+[INFO] Saving file RoleMapper.xml
+[INFO] Saving file UserRoleExample.java
+[INFO] Saving file UserRole.java
+[INFO] Saving file UserRoleMapper.java
+[INFO] Saving file RoleExample.java
+[INFO] Saving file Role.java
+[INFO] Saving file RoleMapper.java
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.726 s
+[INFO] Finished at: 2019-07-25T14:38:52+08:00
+[INFO] ------------------------------------------------------------------------
