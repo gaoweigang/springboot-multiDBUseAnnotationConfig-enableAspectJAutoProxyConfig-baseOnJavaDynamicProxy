@@ -18,19 +18,20 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--springBoot的aop-->
+        <!--Springboot的aspect-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
+      <!--  <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>1.0</version>
+        </dependency>
+-->
         <!--Springboot的aspect-->
 
-        <!-- springboot junit单元测试 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
 
 
         <!-- 添加MyBatis依赖 -->
