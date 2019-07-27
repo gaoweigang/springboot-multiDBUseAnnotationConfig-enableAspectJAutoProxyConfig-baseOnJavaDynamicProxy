@@ -31,7 +31,6 @@ public class Application {
     public static void main(String[] args) {
         //AbstractAutowireCapableBeanFactory
         //AbstractAutoProxyCreator
-        AnnotationAwareAspectJAutoProxyCreator
         System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "E:\\class");  //该设置用于输出cglib动态代理产生的类
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");   //该设置用于输出jdk动态代理产生的类，输出路径为当前项目下面
         SpringApplication.run(Application.class, args);
