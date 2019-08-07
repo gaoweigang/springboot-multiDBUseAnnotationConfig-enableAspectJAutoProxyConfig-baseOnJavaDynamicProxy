@@ -15,3 +15,9 @@ cglib动态代理生成.class文件
 
 
 EnableAspectJAutoProxy 与 spring.aop.proxy-target-class 的区别
+
+
+解决问题的思路：
+由debug可知，虽然我再EnableAspectJAutoProxy注解中指定proxyTargetClass = false，但是debug的时候发现ProxyConfig类中proxyTargetClass属性仍然为true, 由此可知
+ProxyConfig类中proxyTargetClass属性被更改为true了，而proxyTargetClass属性被更改必然会对调用ProxyConfig类的setProxyTargetClass方法，于是我在setProxyTargetClass方法
+上加了断点
